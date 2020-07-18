@@ -1,0 +1,13 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+1) Open internet traffic on Web Application Instnace
+2) EBS volume unencrypted
+3) S3 bucket unencrypted
+4) Application Load Balancer should be configured to redirect all HTTP requests to HTTPS
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+1) Remove all access from the internet for Security Group asscoicated with Web Application Instance  
+2) Restrict SSH access to EC2 instance from specific IPs by removing access from Security Group asscoicated with Web Application Instance
+3) Create Alarms for VPC, NACL, Security Group, S3 bucket policy changes
+4) Enable Encryption on S3 bucket
+5) Enable Encryption on EBS volume
+

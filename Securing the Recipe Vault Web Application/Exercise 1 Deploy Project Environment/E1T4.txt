@@ -1,0 +1,13 @@
+Based on the architecture diagram, and the steps you have taken so far to upload data and access the application web service, identify at least 2 obvious poor practices as it relates to security.  Include justification.
+
+# Poor practice 1
+Security Group associated with Web Service Instance is allowing all traffic from internet.
+
+# Poor practice 2
+No bucket policy specified for S3 buckets.
+
+# Poor practice 3
+Security Group associated with Web Service Instance is allowing SSH from all IPs
+
+# Poor practice 4 
+S3 bucket is not encrypted.

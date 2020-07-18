@@ -1,0 +1,57 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+
+CloudFormation
+	1) Cfripper
+	2) Cloudsploit
+	3) cfn-lint
+
+Terraform
+	1) Chef inspec
+	2) Open Policty Agent - Regula
+	3) Terrascan
+
+### Example vulnerability
+Excessive Permissions
+
+
+##Scan AMI’s or containers for OS vulnerabilities
+
+AWS Tools
+	1) AWS Inspector
+Open Source
+	1) Clair
+	2) Anchore
+	3) Trivy
+Commerical Products
+	1) aquasec
+	2) sysdig
+
+### Example vulnerability
+OS Vulnerabilities
+Allowing users to login with root credentials without having to use command authenticated by public key
+
+
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS Tools
+	1) AWS Config
+	2) AWS Security Hub
+Open Source
+	1) Prowler
+	2) Scout2
+	3) Cloudsploit
+Commerical Product that can provide dynamic real time monitoring
+	1) Fugue
+	2) Prisma Cloud
+
+### Example vulnerability
+Traffic allowed on open ports
+S3 bucket server side encryption
+IAM user password policy
+Access keys are rotated
+MFA enabled for IAM users
+CloudTrail is enabled to monitor management access
+
+

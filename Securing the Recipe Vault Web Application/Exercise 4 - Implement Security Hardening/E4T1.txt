@@ -1,0 +1,13 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+1) Web Service Instnace Security group should remove all traffic from internet.
+2) Web Service Instance Security group should remove SSH traffic.
+3) Move Web Service Instance to Private Security group and create bastian for SSH access.
+4) Configure password complexity
+5) Remove username/password access from EC2 instance. So that only keypair access is allowed for SSH. 
+
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+1) Add bucket policy that denies any access to the secreat recipies.
+2) Encrypt secreat recipies.

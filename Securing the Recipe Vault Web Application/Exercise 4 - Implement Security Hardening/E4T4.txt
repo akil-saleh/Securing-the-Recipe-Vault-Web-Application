@@ -1,0 +1,13 @@
+
+# What additional architectural change can be made to reduce the internet facing attack surface of the web application instance.
+Move Web Application Instance to Private Subnet and allow traffic to port 5000 only from ELB. NAT gateway can be added for outbound internet traffic for patch updates.
+
+# Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket.
+No creating VPC private endpoints will not prevent the unauthorized access to secret bucket.
+
+# Will applying default encryption setting to the s3 buckets encrypt the data that already exists?
+Encryption will apply to newly added files after encryption is enabled. It will not apply to data that already exists.
+
+# What would happen if the original cloud formation templates are applied to this environment.
+Running original Clound Formation Teamplates will override the changes. 
+
