@@ -14,6 +14,11 @@ Terraform
 
 ### Example vulnerability
 Excessive Permissions
+Secrets are stored in clear text.
+Server side encryption disabled on EBS volumes
+Check if security groups have ingress IP that is open to the world.
+RDS clusters or instances exposing thier passwords.
+Use of wild card in IAM Role Policies
 
 
 ##Scan AMI’s or containers for OS vulnerabilities
@@ -31,6 +36,9 @@ Commerical Products
 ### Example vulnerability
 OS Vulnerabilities
 Allowing users to login with root credentials without having to use command authenticated by public key
+Network reachability vulnerabilities
+Excessive permissions on system directories.
+
 
 
 
