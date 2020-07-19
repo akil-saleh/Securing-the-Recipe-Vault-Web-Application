@@ -3,4 +3,4 @@
 GuardDuty has detected the brute force attack against Web Service instance. It has also detected that from where this attack is being performed. Brute force attacks are used to gain unauthorized access to instance by guessing SSH password.
 
 # Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
-AWS Guard Duty continuously analyszed CloudTrail Event, VPC Flow Logs and DNS requests. And this can help it to detect the attack. 
+AWS Guard Duty continuously analyszed CloudTrail Event, VPC Flow Logs and DNS requests. In this case VPC Flow Logs have been used by AWS Guard to detect the attack. 
